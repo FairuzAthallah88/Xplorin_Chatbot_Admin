@@ -145,7 +145,7 @@ export function FileManager() {
             </Button>
           </div>
 
-          <div className="text-sm text-muted-foreground bg-blue-50 p-3 rounded-lg">
+          <div className="text-sm text-muted-foreground bg-secondary/20 p-3 rounded-lg">
             <strong>Note:</strong> This PDF is stored as encoded text to bypass cloud storage restrictions.
             The content has been processed and is available for chat. | This PDF has been processed for text extraction.
             If it's a scanned document and chat responses are limited, try the "OCR Reprocess" button above.
@@ -354,7 +354,7 @@ export function FileManager() {
                         href={viewingFile.cloudinary_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline break-all"
+                        className="text-secondary hover:underline break-all"
                         title={viewingFile.cloudinary_url}
                       >
                         {viewingFile.cloudinary_url.length > 50 

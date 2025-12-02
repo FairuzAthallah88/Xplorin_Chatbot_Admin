@@ -300,11 +300,11 @@ export function UserManager() {
           </DialogHeader>
           {deletingUser && (
             <div className="space-y-4">
-              <div className="p-4 bg-red-50 rounded-lg">
-                <p className="text-sm text-red-800">
+              <div className="p-4 bg-destructive/20 rounded-lg">
+                <p className="text-sm text-destructive">
                   <strong>User:</strong> {deletingUser.username}
                 </p>
-                <p className="text-sm text-red-600 mt-1">
+                <p className="text-sm text-destructive/80 mt-1">
                   This will permanently delete the user account.
                 </p>
               </div>

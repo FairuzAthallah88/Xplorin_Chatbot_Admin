@@ -118,7 +118,7 @@ export function SourceModal({ source, isOpen, onClose }: SourceModalProps) {
           <div className="flex items-center gap-3">
             <h2 className="text-2xl font-semibold">Detail Sumber</h2>
             {hasFileInfo && (
-              <div className="flex items-center gap-2 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+              <div className="flex items-center gap-2 px-3 py-1 bg-secondary/30 text-secondary rounded-full text-sm">
                 <span>{getFileTypeIcon(source.file_info?.file_type)}</span>
                 <span>Dari File</span>
               </div>
@@ -162,7 +162,7 @@ export function SourceModal({ source, isOpen, onClose }: SourceModalProps) {
                   <CardDescription className="flex items-center gap-4">
                     <span>Sumber: {source.source}</span>
                     {source.similarity_score && (
-                      <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                      <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-secondary/30 text-secondary">
                         {(source.similarity_score * 100).toFixed(1)}% cocok
                       </span>
                     )}
@@ -176,10 +176,10 @@ export function SourceModal({ source, isOpen, onClose }: SourceModalProps) {
               </Card>
 
               {hasFileInfo && (
-                <Card className="border-blue-200 bg-blue-50/50">
+                <Card className="border-secondary bg-secondary/10">
                   <CardHeader>
                     <CardTitle className="text-lg flex items-center gap-2">
-                      <File className="h-5 w-5 text-blue-600" />
+                      <File className="h-5 w-5 text-secondary" />
                       File Rujukan
                     </CardTitle>
                   </CardHeader>

@@ -43,7 +43,7 @@ export const Dashboard = () => {
                 <div className="mb-8 flex justify-between items-start">
                     <div>
                         <h1 className="text-4xl font-bold tracking-tight text-foreground mb-2">
-                            Knowledge Management System
+                            Xplorin Management Admin
                         </h1>
                         <p className="text-lg text-muted-foreground">
                             Manage and organize your team's knowledge base

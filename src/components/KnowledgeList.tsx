@@ -359,7 +359,7 @@ export function KnowledgeList({ onRefresh }: KnowledgeListProps) {
               </Select>
             </div>
             
-            <div className="text-sm text-gray-500">
+            <div className="text-sm text-muted-foreground">
               Menampilkan {((currentPage - 1) * itemsPerPage) + 1}-{Math.min(currentPage * itemsPerPage, totalItems)} dari {totalItems} item
             </div>
           </div>
@@ -438,7 +438,7 @@ export function KnowledgeList({ onRefresh }: KnowledgeListProps) {
             <Card 
               key={item._id} 
               className={`cursor-pointer hover:shadow-md transition-shadow group ${
-                selectedIds.has(item._id) ? 'ring-2 ring-blue-500 bg-blue-50' : ''
+                selectedIds.has(item._id) ? 'ring-2 ring-secondary bg-secondary/10' : ''
               }`}
               onClick={() => handleView(item)}
             >
@@ -536,7 +536,7 @@ export function KnowledgeList({ onRefresh }: KnowledgeListProps) {
         {/* Pagination Controls */}
         {totalPages > 1 && (
           <div className="flex items-center justify-between mt-6">
-            <div className="text-sm text-gray-500">
+            <div className="text-sm text-muted-foreground">
               Halaman {currentPage} dari {totalPages}
             </div>
             

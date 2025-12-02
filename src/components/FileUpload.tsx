@@ -199,8 +199,8 @@ const FileUpload: React.FC<FileUploadProps> = ({ onUploadSuccess }) => {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900">Upload File</h2>
-          <p className="text-gray-600">Upload berbagai jenis file ke knowledge base</p>
+          <h2 className="text-2xl font-bold text-foreground">Upload File</h2>
+          <p className="text-muted-foreground">Upload berbagai jenis file ke knowledge base</p>
         </div>
       </div>
 
@@ -241,7 +241,7 @@ const FileUpload: React.FC<FileUploadProps> = ({ onUploadSuccess }) => {
                   multiple
                   disabled={isUploading}
                 />
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-muted-foreground">
                   Mendukung: PDF (teks selectable), TXT, CSV, XLSX, XLS
                 </p>
               </div>
@@ -416,8 +416,8 @@ const FileUpload: React.FC<FileUploadProps> = ({ onUploadSuccess }) => {
                   <div className="flex items-center space-x-3 flex-1">
                     <div className={`p-2 rounded-full ${
                       file.status === 'success' ? 'bg-green-100 text-green-600' :
-                      file.status === 'error' ? 'bg-red-100 text-red-600' :
-                      'bg-blue-100 text-blue-600'
+                      file.status === 'error' ? 'bg-destructive/20 text-destructive' :
+                      'bg-secondary/20 text-secondary'
                     }`}>
                       {file.status === 'success' ? (
                         <CheckCircle className="w-4 h-4" />
@@ -429,16 +429,16 @@ const FileUpload: React.FC<FileUploadProps> = ({ onUploadSuccess }) => {
                     </div>
                     
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm font-medium text-gray-900 truncate">
+                      <p className="text-sm font-medium text-foreground truncate">
                         {file.name}
                       </p>
-                      <p className="text-xs text-gray-500">
+                      <p className="text-xs text-muted-foreground">
                         {formatFileSize(file.size)}
                         {file.items_created && ` • ${file.items_created} items dibuat`}
                       </p>
                       {file.message && (
                         <p className={`text-xs ${
-                          file.status === 'error' ? 'text-red-600' : 'text-green-600'
+                          file.status === 'error' ? 'text-destructive' : 'text-green-600'
                         }`}>
                           {file.message}
                         </p>

@@ -92,8 +92,8 @@ export function AddKnowledge({ onKnowledgeAdded }: AddKnowledgeProps) {
     <div className="w-full mx-auto">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900">Add New Knowledge</h2>
-          <p className="text-gray-600 mb-4">Create a new knowledge entry to share information with your team.</p>
+          <h2 className="text-2xl font-bold text-foreground">Add New Knowledge</h2>
+          <p className="text-muted-foreground mb-4">Create a new knowledge entry to share information with your team.</p>
         </div>
       </div>
       <Card>
@@ -151,7 +151,7 @@ export function AddKnowledge({ onKnowledgeAdded }: AddKnowledgeProps) {
             {message && (
               <div className={`p-3 rounded-md text-sm ${message.type === 'success'
                   ? 'bg-green-50 text-green-700 border border-green-200'
-                  : 'bg-red-50 text-red-700 border border-red-200'
+                  : 'bg-destructive/20 text-destructive border border-destructive'
                 }`}>
                 {message.text}
               </div>

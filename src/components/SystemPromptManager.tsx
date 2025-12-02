@@ -288,7 +288,7 @@ export function SystemPromptManager() {
                       </Badge>
                     )}
                     {prompt.is_default && (
-                      <Badge variant="secondary" className="bg-blue-500 text-white">
+                      <Badge variant="secondary" className="bg-secondary text-secondary-foreground">
                         Default
                       </Badge>
                     )}
@@ -429,7 +429,7 @@ export function SystemPromptManager() {
                 </Badge>
               )}
               {viewingPrompt?.is_default && (
-                <Badge variant="secondary" className="bg-blue-500 text-white">
+                      <Badge variant="secondary" className="bg-secondary text-secondary-foreground">
                   Default
                 </Badge>
               )}

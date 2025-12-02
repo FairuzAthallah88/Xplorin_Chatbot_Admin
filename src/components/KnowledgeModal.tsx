@@ -317,7 +317,7 @@ export function KnowledgeModal({ knowledge, isOpen, onClose, onUpdate, onDelete 
                                     href={String(value)} 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="text-blue-500 hover:underline"
+                                    className="text-secondary hover:underline"
                                     title={String(value)}
                                   >
                                     {String(value).length > 60 
