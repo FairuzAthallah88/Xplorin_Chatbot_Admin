@@ -17,7 +17,7 @@ export const Home = () => {
           <div className="w-full max-w-md">
             <div className="text-center mb-8">
               <h1 className="text-4xl font-bold tracking-tight text-foreground mb-2">
-                Knowledge Management System
+                Xplorin Management Admin
               </h1>
               <p className="text-lg text-muted-foreground">
                 Manage and organize your team's knowledge base
@@ -28,7 +28,7 @@ export const Home = () => {
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl">Welcome</CardTitle>
                 <CardDescription>
-                  Please login to access the knowledge management system
+                  Please login to access the Xplorin Management Admin
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex justify-center">

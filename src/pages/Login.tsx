@@ -57,7 +57,7 @@ export const Login = () => {
           <div className="w-full max-w-md">
             <div className="text-center mb-8">
               <h1 className="text-4xl font-bold tracking-tight text-foreground mb-2">
-                Knowledge Management System
+                Xplorin Management Admin
               </h1>
               <p className="text-lg text-muted-foreground">
                 Login to access your account
